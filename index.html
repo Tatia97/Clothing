@@ -1,0 +1,299 @@
+
+<style>
+body {
+ font-family: helvetica;
+}
+div.header-img {
+  width: 100%;
+  background-color: #CCCCDD;
+  overflow: hidden;
+  margin: auto;
+  top: 0px ;
+}
+
+#header-img {
+  width:200px;
+  filter: invert(20%);
+  margin:auto;
+
+}
+div.nav-bar {
+  overflow:hidden;
+ 
+  background-color:#CCCCDD;
+  width:100%;
+  top: 100px;
+}
+.nav-link {
+  color: black;
+  text-decoration: none;
+  text-align:center;
+  font-size:18px;
+  padding:14px 50px;
+  float:left;
+  transition: background .5s ease;
+}
+.nav-link:hover{
+  background-color: #B399D4;
+}
+.title {
+  margin-top:150px;
+  color: #261434;
+  text-align:center;
+}
+#email {
+  display:block;
+  margin:auto;
+  width: 200px;
+  padding:10px;
+  border-radius: 50px;
+  border:none;
+  background-color: #CDCDCD;
+  font-size: 15px;
+  transition:width .5s ease,background .5s ease;
+}
+#email::placeholder {
+  color: black;
+  opacity:80%;
+}
+#email:hover {
+  background-color: #CCAADD;
+  width:300px;
+}
+#submit {
+  display:block;
+  margin:auto;
+  padding:8px;
+  border:none;
+  border-radius:50px;
+  width:80px;
+  background-color:#CDCDCD;
+  margin-top:20px;
+  color: black;
+  font-size:15px;
+  transition:background .5s ease;
+}
+#submit:hover{
+  background-color:#CCAADD;
+}
+.text {
+  width:700px;
+  margin:auto;
+  color:#301934;
+  margin-top:100px;
+    }
+
+#dropdown {
+  width:300px;
+  padding: 10px;
+  border-radius:15px;
+
+}
+
+div.city {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.city-tile{
+  margin: auto;
+  border: none;
+  background-color: #DDEEDD;
+  text-decoration: none;
+  padding: 10px;
+  width: 40px;
+  transition: background 1s ease,padding .4s ease;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 50px;
+  border-radius: 30px;
+  
+}
+.city-tile:hover {
+  padding: 20px;
+  box-shadow: 0px 0px 20px black;
+}
+a:hover {
+  text-decoration: none;
+  color: #D291BC;
+}
+a:visited {
+   color: #D291BC;
+}
+a {
+   color: #FEC8D8;
+  text-decoration: none;
+}
+
+
+div.flex-container {
+  display:flex;
+  justify-content:center;
+  text-align:center;
+}
+div.products {
+  background-color:#FFEEEE;
+  margin:20px;
+  transiction: box-shadow .5s ease;
+}
+.products:hover {
+  box-shadow: 0px 0px 10px #CDCDCD;
+}
+div.product-title {
+  padding:10px;
+  background-color:#CDCDCD;
+  text-align:center;
+}
+div.product-description {
+  color: #301934;
+}
+#product-submit {
+  background-color:#CDCDCD;
+  border:none;
+  width:100%;
+  text-decoration: none;
+  font-size:20px;
+  padding: 15px;
+  transition: background .5s ease;
+}
+#product-submit:hover {
+  background-color:#CCAAEE;
+}
+@media screen and (max-width:600px){
+  .flex-container {
+    flex-direction: column;
+  }
+  .nav-link {
+    width: 100%;
+    margin:auto;
+  }
+  .text {
+    width: 400px;
+  }
+}
+
+
+
+</style>
+
+
+
+
+<html>
+
+
+  <header id="header"> 
+  
+    <div class="header-img">
+      <img id="header-img" src="logoMakr_8.png">
+    </div>
+    <div class="nav-bar">
+      <nav id="nav-bar">
+        <ul class="links">
+          <a class="nav-link" href="#Home">Home</a>
+          <a class="nav-link" href="#how-it-works">How It Works?</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </ul>  
+      </nav>  
+    </div>  
+    
+  </header>
+  <br>
+  
+  <form id="form" >
+  
+    <h1 class="title">Find your perfect dress here!</h1>
+    <input id="email" type="email" name="email" placeholder="Enter your email adress" button type="submit">
+    <input button id="submit" type="submit" value="Submit">
+  
+  </form>  
+  <br>
+  
+  <div class="text" id="Home">
+    
+    <div id="length">
+        <h1>Dress length</h1>
+            <input type="radio" name="length" value="1">Short</input></br>
+            <input type="radio" name="length" value="2">Medium</input>
+            </br>
+            <input type="radio" name="length" value="3">Long</input>
+          
+            </br>
+    </div>    
+  
+     <h1 >Material</h1>
+    <select id="dropdown">
+    
+    <option value="default">Cotton</option>
+    <option value="default">Silk</option>
+    <option value="default">Wool</option>
+    <option value="default">Linen</option>
+    <option value="default">Leather</option>
+    
+  </select>  
+   
+    <h1>For additional comments</h1>
+    <textarea id="comment" rows="7" cols="40">For additional comments</textarea></br></br>
+  
+  
+<div id="how-it-works">
+
+    <section id="City">
+    <div class="city">
+    <div><a class="city-tile" href="https://www.google.com/search?q=tbilisi&rlz=1C1CHBF_enGE778GE778&oq=Tbili&aqs=chrome.0.0j46j69i57j0l4j69i61.6473j0j9&sourceid=chrome&ie=UTF-8" target="_blank">Tbilisi</a></div>
+    <div><a class="city-tile" href="https://www.google.com/search?q=batumi&rlz=1C1CHBF_enGE778GE778&oq=batumi&aqs=chrome..69i57j46j0l6.1367j0j9&sourceid=chrome&ie=UTF-8" target="_blank">Batumi</a></div>
+  </div>
+    </section>
+</div>
+  
+  <div id="pricing" class="flex-container">
+    <div class="products">
+      <div class="product-title">
+        <h1>Short Dress</h1>
+      </div> 
+      <div class="product-description">
+        <h2>$600</h2>
+        <p>Cotton</p>
+        <p>Silk</p>
+        <p>leather</p>
+      </div> 
+      <div class="product-submit">
+        <input id="product-submit" button type="submit" value="select">
+      </div>  
+    </div>  
+    
+    <div class="products">
+      <div class="product-title">
+        <h1>Medium Dress</h1>
+      </div> 
+      <div class="product-description">
+        <h2>$900</h2>
+        <p>Cotton</p>
+        <p>Silk</p>
+        <p>Leather</p>
+      </div> 
+      <div class="product-submit">
+        <input id="product-submit" button type="submit" value="select">
+      </div>  
+    </div>
+    
+    <div class="products">
+      <div class="product-title">
+        <h1>Long dress</h1>
+      </div> 
+      <div class="product-description">
+        <h2>$1200</h2>
+        <p>Cotton</p>
+        <p>Silk</p>
+        <p>leather</p>
+      </div> 
+      <div class="product-submit">
+        <input id="product-submit" button type="submit" value="select">
+      </div>  
+    </div>
+    
+  </div>  
+
+</html>  
